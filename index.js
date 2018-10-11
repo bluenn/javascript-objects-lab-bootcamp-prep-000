@@ -20,6 +20,14 @@ function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
   return obj;
 }
 
+function deleteFromObjectByKey(object, key) {
+//first assign to new Object as a clone
+//then can safely delete from new object
+Object.assign({}, object, {key});
+delete Object[key];
+return Object;
+  
+}
 
 
 
