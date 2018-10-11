@@ -8,7 +8,7 @@ var recipes = {
 
 //object assign where keeps original recipe the same
 //and makes new object clone and adds new property
-function updateObjectWithKeyAndValue(object, key, value){
+function updateObjectWithKeyAndValue(obj, key, value){
 Object.assign({}, obj, {[key]: value})
   return Object;
 }
