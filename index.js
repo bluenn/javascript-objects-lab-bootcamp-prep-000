@@ -23,7 +23,7 @@ function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
 function deleteFromObjectByKey(object, key) {
 //first assign to new Object as a clone
 //then can safely delete from new object
-Object.assign({}, object, {key});
+Object.assign({}, object);
 delete Object[key];
 return Object;
 
