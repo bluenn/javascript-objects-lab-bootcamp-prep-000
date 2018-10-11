@@ -5,14 +5,17 @@ var recipes = {
   sugar: "five cups",
   honey: "seven teaspoons"
 }
+
+//object assign where keeps original recipe the same
+//and makes new object clone and adds new property
 function updateObjectWithKeyAndValue(object, key, value){
-  object[key] = value;
-  return object;
+Object.assign({}, obj, {[prop2]: 2})
+  return Object;
 }
 
 //object assign where keeps original recipe the same
 //and makes new object clone and adds new property
-function updateObjectWithKeyAndValue(obj, prop2, 2) {
-  Object.assign({}, obj, {[prop2]: 2})
-  return Object;
+function destructivelyUpdateObjectWithKeyAndValue(obj, prop2, 2) {
+  obj[prop2] = 2
+  return obj;
 }
